@@ -1,0 +1,59 @@
+<div>
+    <div class="flex items-center border-b border-gray-200 pb-2! mb-4! space-x-5!">
+        <i
+        (click)="goBackBusList()"
+        class="pi pi-arrow-left text-2xl! cursor-pointer"></i>
+        <span class="text-[1.5rem]!">{{type === 'add' ? 'Araç Ekle' : 'Araç Düzenle'}}</span>
+    </div>
+    
+    <form class="space-y-4!">
+        <p-iftalabel>
+            <input class="w-full" pInputText id="plaka" [(ngModel)]="vehicle.plaka" name="plaka" autocomplete="off" />
+            <label for="plaka">Plaka</label>
+        </p-iftalabel>
+        <p-iftalabel>
+            <input pInputText id="mesafe" class="w-full" [(ngModel)]="vehicle.mesafe" name="mesafe" autocomplete="off" />
+            <label for="mesafe">Mesafe</label>
+        </p-iftalabel>
+        <p-iftalabel>
+            <input pInputText id="hiz" class="w-full" [(ngModel)]="vehicle.hiz" name="hiz" autocomplete="off" />
+            <label for="hiz">Hız</label>
+        </p-iftalabel>
+        <p-iftalabel class="w-full">
+            <p-datepicker 
+             styleClass="w-full!"
+            [(ngModel)]="vehicle.tarih" inputId="date" showIcon iconDisplay="input" name="tarih" />
+            <label for="date">Tarih</label>
+        </p-iftalabel>
+        <p-iftalabel>
+            <input class="w-full" pInputText id="adres" [(ngModel)]="vehicle.adres" name="adres" autocomplete="off" />
+            <label for="adres">Adres</label>
+        </p-iftalabel>
+        <p-fieldset>
+            <ng-template #header>
+                <div class="flex items-center gap-2 px-2">
+                    <span class="font-bold">Konum</span>
+                </div>
+            </ng-template>
+          <div class="space-y-4!">
+            <p-iftalabel>
+                <input pInputText id="enlem" class="w-full" [(ngModel)]="vehicle.konum.enlem" name="enlem" autocomplete="off" />
+                <label for="hiz">Enlem</label>
+            </p-iftalabel>
+
+            <p-iftalabel>
+                <input pInputText id="boylam" class="w-full" [(ngModel)]="vehicle.konum.boylam" name="boylam" autocomplete="off" />
+                <label for="boylam">Boylam</label>
+            </p-iftalabel>
+          </div>
+        </p-fieldset>
+
+       
+
+        
+        <div class="flex justify-end mt-5!">
+            <p-button label="Kaydet" (onClick)="saveVehicle()"></p-button>
+        </div>
+    </form>
+    
+</div>

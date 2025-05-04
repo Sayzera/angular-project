@@ -1,0 +1,33 @@
+<div
+  class="fixed top-0 left-0 right-0 z-[9999] flex h-16 items-center shadow-md bg-white px-4 py-2 transition-all duration-300 ease-in-out hover:shadow-lg hover:bg-gray-50 focus-within:shadow-lg focus-within:bg-gray-50 active:shadow-sm active:bg-gray-100 pl-2! bg-[#002366]! justify-between md:justify-start"
+>
+  <!-- logo -->
+  <div class="size-14 flex-none h-full flex items-center">
+    <img src="/assets/images/logo/logo.png" alt="Logo" class="h-10 w-10 mr-2" />
+  </div>
+
+  <!-- navigation links en fazla yeri alsın -->
+
+  <app-nav-links
+    class="size-14 flex-grow w-full overflow-x-auto hidden md:block"
+  ></app-nav-links>
+
+  <!-- user -->
+  <div
+    class="size-14 flex-none flex items-center overflow-hidden h-full w-[220px] md:w-auto"
+  >
+    <div class="flex items-center gap-4">
+      <div class="text-white md:text-sm whitespace-nowrap">
+        Ankara Çinçin durağı
+      </div>
+
+      <div class="flex items-center justify-center">
+        <div
+          class="w-10 h-10 rounded-full bg-yellow-400 flex items-center justify-center"
+        >
+          <i class="pi pi-user text-white text-xl"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

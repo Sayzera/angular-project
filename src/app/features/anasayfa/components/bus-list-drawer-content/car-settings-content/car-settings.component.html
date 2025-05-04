@@ -1,0 +1,94 @@
+<div class="flex flex-col space-y-2!">
+  <p-iconfield class="w-full">
+    <p-inputicon styleClass="pi pi-search" />
+    <input
+      type="text"
+      pInputText
+      placeholder="Araç Plakası"
+      class="w-full"
+      [(ngModel)]="search"
+      (ngModelChange)="filterBuses()"
+    />
+  </p-iconfield>
+
+  <p-message
+    severity="info"
+    icon="pi pi-car"
+    [text]="filteredBusState.length + ' adet araç listelenmiştir.'"
+    styleClass="h-full"
+  />
+
+  <p-accordion value="0">
+    <p-accordion-panel
+      *ngFor="let item of filteredBusState; let i = index"
+      [value]="i.toString()"
+      (contextmenu)="onContextMenu($event, item)"
+    >
+      <p-accordion-header>
+        <div class="flex items-center justify-between w-full pr-5! relative">
+          <div class="flex justify-between items-center space-x-4!">
+            <span
+              class="text-bold text-lg w-6! whitespace-nowrap overflow-hidden"
+              >{{ i + 1 }}-</span
+            >
+            <div class="flex items-center! space-x-2!">
+              <div
+                class="flex items-center! justify-center! w-10 h-10 rounded-full"
+                [style.background-color]="item.color"
+              >
+                <i class="pi pi-truck text-white text-xl!"></i>
+              </div>
+              <span class="text-bold text-lg">{{ item.plaka }}</span>
+            </div>
+            <div class="flex items-center justify-center">
+              <i class="pi pi-wave-pulse text-xs!"></i>
+              <span class="text-gray-500 text-xs!"> {{ item.mesafe }} km</span>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2! w-20">
+            <i class="pi pi-wifi"></i>
+            <span class="w-15! whitespace-nowrap overflow-hidden"
+              >{{ item.hiz }}km/s</span
+            >
+          </div>
+        </div>
+      </p-accordion-header>
+      <p-accordion-content>
+        <div class="flex flex-col space-y-4!">
+          <div class="flex items-center space-x-2!">
+            <i class="pi pi-map-marker"></i>
+            <span class="text-ellipsis whitespace-nowrap overflow-hidden">
+              {{ item.adres }}
+            </span>
+          </div>
+          <div class="flex items-center justify-between w-full">
+            <div class="flex items-center space-x-10!">
+              <div class="flex items-center space-x-1!">
+                <i class="pi pi-wifi text-sm! text-semibold!"></i>
+                <span class="text-sm!"> {{ item.hiz }} </span>
+              </div>
+              <div class="flex items-center justify-center space-x-1!">
+                <i class="pi pi-wave-pulse text-xs!"></i>
+                <span class="text-gray-500 text-xs!">
+                  {{ item.mesafe }} km</span
+                >
+              </div>
+              <div class="flex items-center justify-center space-x-1!">
+                <i class="pi pi-car text-xs!"></i>
+                <span class="text-gray-500 text-xs!">{{ item.plaka }}</span>
+              </div>
+            </div>
+            <div class="flex items-center space-x-1!">
+              <i class="pi pi-calendar-clock text-sm!"></i>
+              <span class="text-sm!"> {{ item.tarih }} </span>
+            </div>
+          </div>
+        </div>
+      </p-accordion-content>
+
+    </p-accordion-panel>
+  </p-accordion>
+</div>
+<p-contextmenu #cm [model]="items"
+appendTo="body"
+(onHide)="onHide()" />

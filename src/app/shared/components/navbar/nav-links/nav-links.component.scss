@@ -1,0 +1,16 @@
+.active-link {
+  position: relative;
+  color: #FFD700 !important;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #FFD700;
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5);
+  }
+} 

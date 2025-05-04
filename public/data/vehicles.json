@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "plaka": "06 J 0138",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T08:15:00",
+    "adres": "Atatürk Bulvarı No: 123, Çankaya"
+  },
+  {
+    "id": 2,
+    "plaka": "06 J 0141",
+    "mesafe": 5.1,
+    "hiz": 28,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T09:30:00",
+    "adres": "Tunalı Hilmi Caddesi No: 45, Çankaya"
+  },
+  {
+    "id": 3,
+    "plaka": "06 J 0151",
+    "mesafe": 5.1,
+    "hiz": 26,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T10:45:00",
+    "adres": "Kızılay Meydanı No: 78, Kızılay"
+  },
+  {
+    "id": 4,
+    "plaka": "06 J 0255",
+    "mesafe": 5.1,
+    "hiz": 23,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T11:20:00",
+    "adres": "Çankaya Caddesi No: 156, Çankaya"
+  },
+  {
+    "id": 5,
+    "plaka": "06 J 0253",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T12:10:00",
+    "adres": "Bahçelievler 7. Cadde No: 89, Bahçelievler"
+  },
+  {
+    "id": 6,
+    "plaka": "06 J 0621",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T13:25:00",
+    "adres": "Gazi Mustafa Kemal Bulvarı No: 234, Çankaya"
+  },
+  {
+    "id": 7,
+    "plaka": "06 J 0729",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum":  {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T14:40:00",
+    "adres": "Eskişehir Yolu No: 567, Söğütözü"
+  },
+  {
+    "id": 8,
+    "plaka": "06 J 0790",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T15:55:00",
+    "adres": "İstanbul Caddesi No: 345, Keçiören"
+  },
+  {
+    "id": 9,
+    "plaka": "06 J 1065",
+    "mesafe": 5.1,
+    "hiz": 25,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T16:30:00",
+    "adres": "Anıt Caddesi No: 678, Ulus"
+  },
+  {
+    "id": 10,
+    "plaka": "06 J 1094",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T17:45:00",
+    "adres": "Cinnah Caddesi No: 432, Çankaya"
+  },
+  {
+    "id": 11,
+    "plaka": "06 J 1393",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T18:20:00",
+    "adres": "Konya Yolu No: 789, Etimesgut"
+  },
+  {
+    "id": 12,
+    "plaka": "06 J 1473",
+    "mesafe": 5.1,
+    "hiz": 19,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T19:35:00",
+    "adres": "Dumlupınar Bulvarı No: 890, Çankaya"
+  },
+  {
+    "id": 13,
+    "plaka": "06 J 1599",
+    "mesafe": 5.1,
+    "hiz": 0,
+    "konum": {
+      "enlem": "39.920739",
+      "boylam": "32.854114"
+    },
+    "color": "green",
+    "tarih": "2025-05-04T20:45:00",
+    "adres": "Yenişehir Mahallesi No: 567, Yenimahalle"
+  }
+]

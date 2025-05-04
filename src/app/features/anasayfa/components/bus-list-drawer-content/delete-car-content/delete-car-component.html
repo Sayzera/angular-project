@@ -1,0 +1,40 @@
+<div class="flex items-center border-b border-gray-200 pb-2! mb-4! space-x-5!">
+    <i
+    (click)="goBackBusList()"
+    class="pi pi-arrow-left text-2xl! cursor-pointer"></i>
+    <span class="text-[1.5rem]!">Araç Sil</span>
+
+  
+</div>
+
+<div>
+    <div class="flex flex-col space-y-4 mt-4">
+        <div class="text-center">
+            <p class="text-lg mb-2">{{selectedBus?.plaka}} araçını silmek istediğinize emin misiniz?</p>
+            <p class="text-sm text-gray-600">Onaylamak için plakayı aşağıya yazın</p>
+        </div>
+
+        <div class="flex flex-col space-y-2 mt-4!">
+            <input 
+                type="text" 
+                pInputText 
+                [(ngModel)]="confirmationText" 
+                placeholder="Plakayı yazın"
+                class="w-full"
+                [class.ng-invalid]="!isConfirmationValid"
+            />
+            <small class="text-red-500" *ngIf="confirmationText && !isConfirmationValid">
+                Plaka numarası eşleşmiyor
+            </small>
+        </div>
+
+        <div class="flex justify-end mt-4!">
+            <p-button 
+                label="Sil" 
+                severity="danger"
+                [disabled]="!isConfirmationValid"
+                (onClick)="deleteVehicle()"
+            ></p-button>
+        </div>
+    </div>
+</div>
